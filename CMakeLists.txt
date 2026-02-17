@@ -36,4 +36,3 @@ add_executable(poisson_fd
   fd/poisson/poisson_main.cpp
 )
 target_link_libraries(poisson_fd PRIVATE common MPI::MPI_CXX)
-EOF
