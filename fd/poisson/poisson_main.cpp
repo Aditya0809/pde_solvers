@@ -1,5 +1,6 @@
 #include <mpi.h>
 #include <cstdio>
+#include "decomp2d.hpp"
 
 int main(int argc, char** argv) {
   MPI_Init(&argc, &argv);
