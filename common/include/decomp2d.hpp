@@ -5,13 +5,15 @@
 
 class Decomp2D
 {
+    MPI_Comm comm_;
+    int Nx_, Ny_; // global grid size
+    int Px_, Py_; // process grid size
     int rank_, size_;
-    int Px_, Py_, px_, py_;
-    int Nx_, Ny_, nx_, ny_;
+    int px_, py_; // process coordinates in the process grid
+    int nx_, ny_; // local grid size for this process (without ghost cells)
     int i0_, i1_, j0_, j1_; // bounds are half open: [i0, i1), [j0, j1)
     int left_, right_, up_, down_;
     int nghost_; // number of ghost cells for communication
-    MPI_Comm comm_;
 
 public:
     Decomp2D(MPI_Comm comm, int Nx, int Ny, int Px, int Py, int nghost = 0) : comm_(comm), Nx_(Nx), Ny_(Ny), Px_(Px), Py_(Py), nghost_(nghost)
