@@ -59,8 +59,16 @@ int main(int argc, char** argv) {
   int up = decomp.up();
   int down = decomp.down();
 
+  std::vector<float> send_column(nghost*ny);
+  std::vector<float> recv_column(nghost*ny);
+  std::vector<float> send_row(nghost*nx);
+  std::vector<float> recv_row(nghost*nx);
+
   if(left != MPI_PROC_NULL && nghost > 0) {
     
+    
+
+
     for(std::size_t ii=0; ii < nghost; ++ii) {
       // Send left ghost layer
       MPI_Send(&u[index(decomp.nghost(), decomp.nghost() + ii)], decomp.ny(), MPI_FLOAT, left, rank, MPI_COMM_WORLD);
