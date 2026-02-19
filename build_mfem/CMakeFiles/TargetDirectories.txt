@@ -1,0 +1,7 @@
+/scratch/gautschi/apaspunu/pde_solvers/build_mfem/CMakeFiles/common.dir
+/scratch/gautschi/apaspunu/pde_solvers/build_mfem/CMakeFiles/poisson_fd.dir
+/scratch/gautschi/apaspunu/pde_solvers/build_mfem/CMakeFiles/edit_cache.dir
+/scratch/gautschi/apaspunu/pde_solvers/build_mfem/CMakeFiles/rebuild_cache.dir
+/scratch/gautschi/apaspunu/pde_solvers/build_mfem/mfem/CMakeFiles/mfem_smoke.dir
+/scratch/gautschi/apaspunu/pde_solvers/build_mfem/mfem/CMakeFiles/edit_cache.dir
+/scratch/gautschi/apaspunu/pde_solvers/build_mfem/mfem/CMakeFiles/rebuild_cache.dir

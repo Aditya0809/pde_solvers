@@ -125,5 +125,6 @@ public:
     // Getter for rank and size    
     int size() const { return size_; } 
     int rank() const { return rank_; }
+    int nghost() const { return nghost_; }
 
 };

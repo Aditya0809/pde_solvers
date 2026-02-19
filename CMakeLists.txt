@@ -36,3 +36,14 @@ add_executable(poisson_fd
   fd/poisson/poisson_main.cpp
 )
 target_link_libraries(poisson_fd PRIVATE common MPI::MPI_CXX)
+
+
+
+# -------------------------------
+# Optional MFEM modules
+# -------------------------------
+option(ENABLE_MFEM "Build MFEM-based modules" OFF)
+
+if(ENABLE_MFEM)
+  add_subdirectory(mfem)
+endif()
