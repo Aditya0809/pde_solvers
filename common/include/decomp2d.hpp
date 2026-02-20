@@ -127,4 +127,7 @@ public:
     int rank() const { return rank_; }
     int nghost() const { return nghost_; }
 
+    // Getter got comm
+    MPI_Comm comm() const { return comm_; }
+
 };

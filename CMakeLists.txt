@@ -37,6 +37,11 @@ add_executable(poisson_fd
 )
 target_link_libraries(poisson_fd PRIVATE common MPI::MPI_CXX)
 
+add_executable(fd_test_decomp
+  fd/poisson/test_decomp.cpp
+)
+target_link_libraries(fd_test_decomp PRIVATE common MPI::MPI_CXX)
+
 
 
 # -------------------------------
