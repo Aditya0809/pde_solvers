@@ -38,4 +38,4 @@ target_link_libraries(MFEM::mfem INTERFACE
 )
 
 add_executable(mfem_smoke smoke.cpp)
-target_link_libraries(mfem_smoke PRIVATE MFEM::mfem MPI::MPI_CXX project_warnings)
+target_link_libraries(mfem_smoke PRIVATE MFEM::mfem MPI::MPI_CXX pde::core)

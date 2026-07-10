@@ -1,0 +1,13 @@
+Checks: >
+  -*,
+  bugprone-*,
+  clang-analyzer-*,
+  cppcoreguidelines-*,
+  modernize-*,
+  performance-*,
+  portability-*,
+  readability-*
+WarningsAsErrors: ''
+HeaderFilterRegex: '^(include|common|fd)/.*'
+CheckOptions:
+  readability-identifier-length.IgnoredParameterNames: '^(i|j|x|y|dt)$'
